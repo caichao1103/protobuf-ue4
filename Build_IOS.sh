@@ -48,7 +48,7 @@ pushd ${PROTOBUF_DIR}/cmake
   xcodebuild -target install build
 
   # TODO: delete the code below, shoud use xcodebuild config.
-  mv Release-iphoneos/libprotobuf.a "${PROTOBUF_UE4_PREFIX}/lib/libprotobuf.a"
+  mv Release/libprotobuf.a "${PROTOBUF_UE4_PREFIX}/lib/libprotobuf.a"
 
   lipo -info "${PROTOBUF_UE4_PREFIX}/lib/libprotobuf.a"
 popd
